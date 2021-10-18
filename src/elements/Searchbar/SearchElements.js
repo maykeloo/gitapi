@@ -92,6 +92,11 @@ export const SearchIconMobile = styled(FaSearch)`
     display: none;
     transition: 0.3s;
 
+
+    &:hover {
+        color: ${props => props.background ?  'black' : 'white'}
+    }
+    
     @media screen and (max-width: 920px) {
     display: block;
     font-size: 20px;

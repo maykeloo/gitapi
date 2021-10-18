@@ -18,6 +18,10 @@ export const Logo = styled.span`
     @media screen and (max-width: 920px) {
         font-size: 1.7em;
     }
+
+    @media screen and (max-width: 1300px) {
+        font-size: 2em;
+    }
 `
 
 export const ThemeSwitchTab = styled.button`
