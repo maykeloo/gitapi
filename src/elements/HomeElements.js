@@ -56,14 +56,11 @@ export const ContentDiv = styled.div`
     align-items: flex-end;
     flex-direction: column;
 
-
-
     @media screen and (max-width: 920px) 
     {
         width: 70vw;
         height: 60vh;
     }
-
     
     @media screen and (max-width: 1300px) 
     {
@@ -82,7 +79,7 @@ export const Content = styled.div`
 
     @media screen and (max-width: 1300px) 
     {
-        width: 70vw;
+        width:85vw;
         height: 60vh;
     }
 

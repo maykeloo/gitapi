@@ -24,10 +24,18 @@ export const AvatarSide = styled.div`
     display: flex;
     justify-content: center;
 
+    @media screen and (max-width: 1400px)
+    {
+        height: 20%;
+        width: 40%;
+    }
+
     @media screen and (max-width: 920px)
     {
         height: 20%;
     }
+
+
 `
 
 export const Image = styled.img.attrs(props => ({
@@ -46,6 +54,13 @@ export const Image = styled.img.attrs(props => ({
         height: 60px;
         margin: 15%;
     }
+
+    @media screen and (max-width: 1500px) 
+    {
+        width: 90px;
+        height: 90px;
+        margin: 15%;
+    }
 `
 
 export const UserInformations = styled.div`
@@ -57,6 +72,7 @@ export const UserInformations = styled.div`
 
     @media screen and (max-width: 920px)
     {
+        text-align: center;
         width: 100%;
         flex-grow: none;
         align-items: center;
@@ -75,6 +91,8 @@ export const GeneralUserInformations = styled.header`
         flex-direction: column;
         align-items: center;
     }
+
+
 `
 
 export const UserName = styled.h1`
@@ -83,6 +101,11 @@ export const UserName = styled.h1`
     font-weight: 900;
     font-size: 2.5em;
     color: ${props => props.background ? 'black' : 'white'};
+
+    @media screen and (max-width: 1500px) 
+    {
+        font-size: 1.6em;
+    }
 `
 
 export const GeneralLeft = styled.div`
@@ -116,6 +139,11 @@ export const Time = styled.div`
         justify-content: center;
         width: 80%;
     }
+    @media screen and (max-width: 1300px)
+    {
+        margin-top: 100px;
+    }
+
 `
 
 export const JoinTime = styled.span`
@@ -125,6 +153,16 @@ export const JoinTime = styled.span`
     @media screen and (max-width: 920px)
     {
         font-size: 12px;
+    }
+
+    @media screen and (max-width: 1300px)
+    {
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 1500px) 
+    {
+        font-size: 10px;
     }
 `
 
@@ -138,12 +176,24 @@ export const BioCont = styled.div`
     {
         margin-top: 20px;
         justify-content: center;
+        width: 80%;
     };
+
+    @media screen and (max-width: 1500px) 
+    {
+        width: 70%;
+        font-size: 12px;
+    }
 `
 
 export const Bio = styled.p`
     font-family: "Noto Sans Mono", sans-serif;
     color: grey;
+
+    @media screen and (max-width: 920px)
+    {
+        font-size: 12px;
+    }
 `
 
 export const StatisticsBar = styled.div`
@@ -156,6 +206,7 @@ export const StatisticsBar = styled.div`
     @media screen and (max-width: 920px)
     {
         justify-content: center;
+        
     }
 `
 
@@ -167,6 +218,7 @@ export const StatisticsBarContent = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 `
 
 export const ReposCont = styled.div`
@@ -174,6 +226,12 @@ export const ReposCont = styled.div`
     flex-direction: column;
 
     @media screen and (max-width: 920px)
+    {
+        align-items: center;
+        min-width: 80px;
+    }
+
+    @media screen and (max-width: 1500px) 
     {
         align-items: center;
     }
@@ -201,6 +259,12 @@ export const FollowsCont = styled.div`
     @media screen and (max-width: 920px)
     {
         align-items: center;
+        min-width: 80px;
+    }
+
+    @media screen and (max-width: 1500px) 
+    {
+        align-items: center;
     }
  `
 export const FollowsTitle = styled.span`
@@ -224,6 +288,12 @@ export const FollowingCont = styled.div`
     flex-direction: column;
 
     @media screen and (max-width: 920px)
+    {
+        align-items: center;
+        min-width: 80px;
+    }
+
+    @media screen and (max-width: 1500px) 
     {
         align-items: center;
     }
@@ -250,6 +320,17 @@ export const ExtraInfo = styled.div`
     {
         margin-top: 100px;
     }
+
+    @media screen and (max-width: 1300px)
+    {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 1500px) 
+    {
+        width: 100%;
+    }
+    
 `
 
 export const Information = styled.div`
@@ -264,6 +345,9 @@ export const Information = styled.div`
         flex-direction: column;
         width: 100%;
     }
+
+
+    
 `
 
 export const InfoText = styled.span`
@@ -277,6 +361,12 @@ export const InfoText = styled.span`
     {
         margin-top: 5px;
         margin-left: 0;
+    }
+
+    @media screen and (max-width: 1500px) 
+    {
+        font-size: 10px;
+        margin-left: 3px;
     }
 
 `
