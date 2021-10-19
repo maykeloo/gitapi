@@ -1,9 +1,12 @@
 import React from 'react'
-import { LookFOrButton, LookingFor, SearchBar, SearchIcon, SearchIconMobile, SearchInput, SearchText } from './SearchElements'
+import { WelcomeText } from '../HomeElements'
+import { LookFOrButton, LookingFor, SearchBar, SearchIcon, SearchIconMobile, SearchInput, SearchText, SeachbarContent } from './WelcomeSearchElements'
 
-const Searchbar = ({background, search, input}) => {
+const WelcomeSearch = ({background, search, input}) => {
     return (
         <>
+        <SeachbarContent>
+            <WelcomeText/>
             <SearchBar background = {background}>
                 <LookingFor>
                     <SearchIcon background = {background}/>
@@ -13,8 +16,9 @@ const Searchbar = ({background, search, input}) => {
                     <SearchText>Search</SearchText><SearchIconMobile background = {background}/>
                 </LookFOrButton>
             </SearchBar>
+        </SeachbarContent>
         </>
     )
 }
 
-export default Searchbar
+export default WelcomeSearch

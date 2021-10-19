@@ -1,21 +1,39 @@
 import styled from "styled-components";
 import {FaSearch} from 'react-icons/fa'
 
+export const SeachbarContent = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    width: 40vw;
+    justify-content: space-around;
+`
+
 export const SearchBar = styled.form`
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 10%;
+    height: 30%;
     transition: 0.3s;
-    background-color: ${props => props.background ? '#E9E9E9' : '#2F0176'};
+    background-color: #580078;
+    border: 3px solid black;
+    padding: 5px;
     margin-bottom: 20px;
     align-items: center;
     box-shadow: ${props => props.background ? "8px 8px 24px 0px rgba(142, 142, 142, 1);" : 'none'};
-    border-radius: 5px;
+
+
+    @media screen and (max-width: 1300px)
+    {
+        
+    }
 
     @media screen and (max-width: 920px)
     {
-        margin-top: 20px;
+        width: 80vw;
+        padding: 0;
+
     }
 `
 
@@ -26,24 +44,26 @@ export const LookingFor = styled.div`
     justify-content: flex-start;
     align-items: center;
     padding-left: 30px;
-`
 
-//DO ZROBIENIA
+    @media screen and (max-width: 920px)
+    {
+        width: 100%;
+    }
+`
 
 export const LookFOrButton = styled.button`
     height: 90%;
     width: 15%; 
     margin: 5px;
     transition: 0.3s;
-    background-color: ${props => props.background ? 'black' : 'white'};
+    background-color: black;
     border: 0;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 3px solid transparent;
-    color: ${props => props.background ? 'white' : 'black'};
-    border-radius: 5px;
+    color: grey;
 
     &:hover {
         border: 3px solid black;
@@ -58,6 +78,7 @@ export const LookFOrButton = styled.button`
 
     @media screen and (max-width: 1300px) {
         font-size: 18px;
+        width: 25%;
     }
 
     @media screen and (max-width: 920px) {
@@ -106,7 +127,7 @@ export const SearchIconMobile = styled(FaSearch)`
     @media screen and (max-width: 920px) {
     display: block;
     font-size: 20px;
-    color: ${props => props.background ? 'white' : 'black'};
+    color: white;;
     }
 `
 
@@ -125,9 +146,19 @@ export const SearchInput = styled.input.attrs(() => ({
     outline: none;
     border: 0;
 
+
     
+    @media screen and (max-width: 1300px) {
+        margin-left: 15px;
+    &::placeholder {
+        font-size: 16px;
+    }
+
     @media screen and (max-width: 920px) {
         font-size: 13px;
         margin-left: -10px;
+        width: 100%;
     }
+
+}
 `

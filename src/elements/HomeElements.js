@@ -2,12 +2,15 @@ import styled, {keyframes} from "styled-components";
 import {AiFillGithub} from 'react-icons/ai'
 
 const rotate = keyframes`   
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }` 
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+` 
 
 
 
@@ -21,6 +24,11 @@ export const App = styled.div`
     justify-content: center;
     align-items: center;
     overflow-y: hidden;
+
+    @media screen and (max-width: 920px)
+    {
+        overflow-y: scroll
+    }
 `
 
 export const WelcomeScreen = styled.div`
@@ -70,6 +78,7 @@ export const Content = styled.div`
     transition: 0.3s;
     background-color: ${props => props.background ? 'white' : '#2F0176'};
     box-shadow: ${props => props.background ? "8px 8px 24px 0px rgba(142, 142, 142, 1)" : 'none'};
+    border-radius: 5px;
 
     @media screen and (max-width: 1300px) 
     {
@@ -78,7 +87,7 @@ export const Content = styled.div`
     }
 
     
-    @media screen and (max-width: 1300px) 
+    @media screen and (max-width: 920px) 
     {
         width: 85vw;
         height: 90vh;

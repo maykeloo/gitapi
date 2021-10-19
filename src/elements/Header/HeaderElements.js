@@ -15,12 +15,12 @@ export const Logo = styled.span`
     color: ${props => props.background ? 'black' : 'white'};
     font-weight: bold;
 
-    @media screen and (max-width: 920px) {
-        font-size: 1.7em;
-    }
-
     @media screen and (max-width: 1300px) {
         font-size: 2em;
+    }
+
+    @media screen and (max-width: 920px) {
+        font-size: 1.3em;
     }
 `
 
