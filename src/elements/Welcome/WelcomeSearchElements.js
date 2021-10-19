@@ -54,7 +54,7 @@ export const LookingFor = styled.div`
 export const LookFOrButton = styled.button`
     height: 90%;
     width: 15%; 
-    margin: 5px;
+    margin: 4.9px;
     transition: 0.3s;
     background-color: black;
     border: 0;
