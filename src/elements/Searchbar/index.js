@@ -1,7 +1,7 @@
 import React from 'react'
 import { LookFOrButton, LookingFor, SearchBar, SearchIcon, SearchIconMobile, SearchInput, SearchText } from './SearchElements'
 
-const Searchbar = ({background}) => {
+const Searchbar = ({background, search}) => {
     return (
         <>
             <SearchBar background = {background}>
@@ -9,7 +9,7 @@ const Searchbar = ({background}) => {
                     <SearchIcon background = {background}/>
                     <SearchInput background = {background}/>
                 </LookingFor> 
-                <LookFOrButton background = {background}>
+                <LookFOrButton background = {background} onClick = {search}>
                     <SearchText>Search</SearchText><SearchIconMobile background = {background}/>
                 </LookFOrButton>
             </SearchBar>

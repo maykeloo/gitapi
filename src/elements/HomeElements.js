@@ -16,10 +16,11 @@ export const App = styled.div`
     width: 100vw;
     height: 100vh;
     transition: 0.3s;
-    background-color: ${props => props.background ? '#D2D3B9' : '#220043'};
+    background-color: ${props => props.background ? '#ECECEC' : '#220043'};
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
 `
 
 export const WelcomeScreen = styled.div`
@@ -48,6 +49,7 @@ export const ContentDiv = styled.div`
     flex-direction: column;
 
 
+
     @media screen and (max-width: 920px) 
     {
         width: 70vw;
@@ -67,7 +69,7 @@ export const Content = styled.div`
     flex-grow: 1;
     transition: 0.3s;
     background-color: ${props => props.background ? 'white' : '#2F0176'};
-    border-radius: 30px;
+    box-shadow: ${props => props.background ? "8px 8px 24px 0px rgba(142, 142, 142, 1)" : 'none'};
 
     @media screen and (max-width: 1300px) 
     {

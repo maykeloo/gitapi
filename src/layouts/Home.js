@@ -23,6 +23,16 @@ const Home = () => {
     };
    })
 
+   const [user, setUser] = useState('')
+
+   const getAPI = e => {
+     e.preventDefault();
+
+     fetch("https://api.github.com/users/maykeloo")
+     .then(result => result.json())
+     .then(data => setUser(data))
+   }
+
     return (
         <>
           <App background = {backGround} >
@@ -31,7 +41,7 @@ const Home = () => {
             </WelcomeScreen>
             <ContentDiv>
               <Header switcher = {switchLight} background = {backGround}/>
-              <Searchbar background = {backGround}/>
+              <Searchbar background = {backGround} search = {getAPI}/>
               <Content background = {backGround}>
                 
               </Content>  

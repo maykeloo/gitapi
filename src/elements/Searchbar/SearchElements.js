@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {FaSearch} from 'react-icons/fa'
 
-export const SearchBar = styled.div`
+export const SearchBar = styled.form`
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -9,8 +9,8 @@ export const SearchBar = styled.div`
     transition: 0.3s;
     background-color: ${props => props.background ? 'white' : '#2F0176'};
     margin-bottom: 20px;
-    border-radius: 30px;
     align-items: center;
+    box-shadow: ${props => props.background ? "8px 8px 24px 0px rgba(142, 142, 142, 1)" : 'none'}
 `
 
 export const LookingFor = styled.div`
@@ -27,7 +27,6 @@ export const LookingFor = styled.div`
 export const LookFOrButton = styled.button`
     height: 90%;
     width: 15%; 
-    border-radius: 25px;
     margin-right: 5px;
     transition: 0.3s;
     background-color: ${props => props.background ? 'black' : 'white'};
