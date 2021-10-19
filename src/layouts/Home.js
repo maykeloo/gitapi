@@ -2,8 +2,6 @@ import React, {useState, useEffect}  from 'react'
 import Header from '../elements/Header'
 import {App, Content, ContentDiv, WelcomeScreen, WelcomeText} from '../elements/HomeElements'
 import Searchbar from '../elements/Searchbar';
-import Aos from 'aos';
-import "aos/dist/aos.css";
 
 const Home = () => {
 
